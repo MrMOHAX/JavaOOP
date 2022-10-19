@@ -33,5 +33,6 @@ public class MainActivity extends AppCompatActivity {
         puma.isAlive = true;
         Log.i("isAlive", String.valueOf(puma.isAlive));
         Log.i("breathe()", "My name is " +  puma.name + " and " + puma.breathe());
+
     }
 }
