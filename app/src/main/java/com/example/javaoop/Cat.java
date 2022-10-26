@@ -2,8 +2,8 @@ package com.example.javaoop;
 
 import android.util.Log;
 
-public class Cat extends Animal  {
-    protected int age;
+public class Cat {
+    int age;
     String name;
     String breed;
     String color;
