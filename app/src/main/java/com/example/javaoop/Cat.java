@@ -3,7 +3,7 @@ package com.example.javaoop;
 import android.util.Log;
 
 public class Cat extends Animal  {
-    int age;
+    protected int age;
     String name;
     String breed;
     String color;
