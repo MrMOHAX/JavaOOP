@@ -23,6 +23,12 @@ public class Cat {
     public void talk() {
         Log.i("talk()", "Meow! My name is " + name + ", I'm " + age + " years old, " + "I'm  a " + breed + " breed, and " + color + " color.");
     }
+    public void talk(int age ) {
+        Log.i("talk()", "Meow! I'm " + age + " years old, " + "I'm  a " + breed + " breed, and " + color + " color.");
+    }
+    public void talk(String hello) {
+        Log.i("talk()", "Meow!" + hello);
+    }
 
 
 }
