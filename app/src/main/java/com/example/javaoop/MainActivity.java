@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         myCat = new Cat(4, "Puma", "britan", "black");
         myCat.talk();
 
+
         Cat glasha = new Cat(1, "Masha", "Homelike", "red");
         glasha.number0fLegs = 4;
         Log.i("number0fLegs", String.valueOf(glasha.number0fLegs));
