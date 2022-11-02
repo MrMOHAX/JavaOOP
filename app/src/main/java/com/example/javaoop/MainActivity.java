@@ -15,22 +15,28 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Cat vaska = new Cat();
+        vaska.talk();
+
+        Puma bagira = new Puma();
+        bagira.talk();
+
+        Cat puma = new Puma();
+        puma.talk();
+
+        Cat murzik = new Lion();
+        murzik.talk();
 
         z=z++;
 
         myCat = new Cat(4, "Puma", "britan", "black");
         myCat.talk();
 
-        Cat murzik = new Cat(2, "Murza", "Siamskaya", "Black and white");
-        murzik.talk();
-        murzik.breathe();
-
         Cat glasha = new Cat(1, "Masha", "Homelike", "red");
         glasha.number0fLegs = 4;
         Log.i("number0fLegs", String.valueOf(glasha.number0fLegs));
         glasha.talk();
 
-        Puma puma = new Puma();
         puma.name = "Leo";
         puma.breathe();
         puma.talk();
