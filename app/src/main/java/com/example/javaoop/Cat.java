@@ -18,6 +18,8 @@ public class Cat extends Animal  {
         this.name = name;
         this.breed = breed;
         this.color = color;
+
+
     }
 
     public final void talk() {
