@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         Cat singingCat = new Cat(){
             public void talk(){
+
                 Log.i("talk()", "I'm singing! La-la-la!");
             }
         };
