@@ -96,6 +96,7 @@ public class Cat extends Animal  {
             String color;
             int weight;
 
+
             public Mouse(String color, int weigh ){
                 this.color = color;
                 this.weight = weigh;
