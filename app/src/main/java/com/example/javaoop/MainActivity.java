@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         Cat cat6 = new Cat();
         Cat cat7 = new Cat();
 
+
         Cat.CatMood catMood = new Cat().new CatMood();
         Log.i("levelOfMood", String.valueOf(catMood.levelOfMood));
 
