@@ -13,6 +13,7 @@ public class Cat extends Animal  {
     String helloText;
     CatMood catMood;
 
+
     class CatMood{
         int levelOfMood;
 
@@ -73,7 +74,7 @@ public class Cat extends Animal  {
     public final void talk() {
         Log.i("talk()", helloText);
     }
-    public static final String whatCatsLike(){
+    public static String whatCatsLike(){
         return  " I like playing, jumping and sometimes scratching";
     }
 
