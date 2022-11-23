@@ -26,12 +26,20 @@ public class MainActivity extends AppCompatActivity {
         Cat cat3 = new Cat(8, "Murzik");
         cat3.talk();
 
+        Cat cat4 = new Cat();
+        Cat cat5 = new Cat();
+        Cat cat6 = new Cat();
+        Cat cat7 = new Cat();
+
         Cat.CatMood catMood = new Cat().new CatMood();
         Log.i("levelOfMood", String.valueOf(catMood.levelOfMood));
 
         Log.i("number0Legs","cat1 number of legs: " +  cat1.number0fLegs);
         Lion lion = new Lion();
         lion.talk();
+        Log.i("count", "" + Cat.count);
+        Cat.CountResetter countResetter = new Cat.CountResetter();
+        Log.i("count", "" + Cat.count);
     }
 
     void method(double x, int y){

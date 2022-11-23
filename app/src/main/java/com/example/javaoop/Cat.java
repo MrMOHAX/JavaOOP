@@ -12,7 +12,20 @@ public class Cat extends Animal  {
 
     String helloText;
     CatMood catMood;
-
+    static class CountResetter{
+     boolean moreThan100;
+     CountResetter(){
+         if (Cat.count > 5){
+             moreThan100 = true;
+         }
+         if (moreThan100){
+             resetCount(0);
+         }
+     }
+     void resetCount(int value){
+         Cat.count = value;
+     }
+    }
 
     class CatMood{
         int levelOfMood;
