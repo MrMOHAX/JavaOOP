@@ -8,7 +8,7 @@ import android.widget.Button;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements Printable {
 
     Cat myCat;
     int z;
@@ -22,8 +22,26 @@ public class MainActivity extends AppCompatActivity {
         Cat cat0 = new Lion();
         cat0.talk();
 
+        //Интерфейсы часть 1
+        Printable printable = new Puma();
+        printable.print();
+        ((Puma) printable).move();
 
-        Button button = findViewById(R.id.button);
+        //printAnyObject(new MainActivity());
+
+
+        //Интерфейсы 2 часть
+
+        //Movable.someMethod();
+        Puma puma = new Puma();
+        Log.i("speedOfMoving", "" + puma.speedOfMoving);
+
+        Log.i("speedOfMoving", "" + ((Puma)printable).speedOfMoving);
+
+        Log.i("speedOfMoving", "" + Movable.speedOfMoving);
+
+
+        /*Button button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -31,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-       /* Cat singingCat = new Cat(){
+        Cat singingCat = new Cat(){
             public void talk(){
 
                 Log.i("talk()", "I'm singing! La-la-la!");
@@ -62,5 +80,16 @@ public class MainActivity extends AppCompatActivity {
         int a;
         a = 1;
     }*/
+    }
+    void printAnyObject(Printable printable){
+
+    }
+    void printAnyObject(Puma puma){
+
+    }
+
+    @Override
+    public void print() {
+
     }
 }
