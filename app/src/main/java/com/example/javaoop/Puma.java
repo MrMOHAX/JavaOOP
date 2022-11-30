@@ -5,4 +5,8 @@ import android.util.Log;
 public class Puma extends Cat {
     private String pumaHelloText;
 
+    @Override
+    public void draw() {
+
+    }
 }

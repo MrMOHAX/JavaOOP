@@ -18,6 +18,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //абстрактные классы
+        Cat cat0 = new Lion();
+        cat0.talk();
+
+
         Button button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -26,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Cat singingCat = new Cat(){
+       /* Cat singingCat = new Cat(){
             public void talk(){
 
                 Log.i("talk()", "I'm singing! La-la-la!");
@@ -56,5 +61,6 @@ public class MainActivity extends AppCompatActivity {
     void method1(){
         int a;
         a = 1;
+    }*/
     }
 }
