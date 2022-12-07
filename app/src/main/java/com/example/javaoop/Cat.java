@@ -12,6 +12,8 @@ public abstract class Cat extends Animal  {
 
     String helloText;
     CatMood catMood;
+
+
     static class CountResetter{
      boolean moreThan100;
      CountResetter(){
@@ -63,7 +65,7 @@ public abstract class Cat extends Animal  {
         }
     }
 
-    public Cat(int age, String name) {
+        public Cat(int age, String name) {
         this.age = age;
         this.name = name;
         this.breed = breed;
